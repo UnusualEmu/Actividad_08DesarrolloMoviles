@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Título -->
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Matriculacion"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"/>
+
+    <!-- Materias -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Escoge tus materias:"/>
+
+    <CheckBox
+        android:id="@+id/materia1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Matemáticas"/>
+
+    <CheckBox
+        android:id="@+id/materia2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ciencias"/>
+
+    <CheckBox
+        android:id="@+id/materia3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Historia"/>
+
+    <!-- Turno -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Escoge tu turno:"/>
+
+    <RadioGroup
+        android:id="@+id/turnoGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/turnoManana"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Turno Mañana"/>
+
+        <RadioButton
+            android:id="@+id/turnoTarde"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Turno Tarde"/>
+    </RadioGroup>
+
+
+    <Button
+        android:id="@+id/botonEnviar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enviar"
+        android:layout_gravity="center"/>
+
+</LinearLayout>
